@@ -1,134 +1,61 @@
-## Building a Tic Tac Toe Game with HTML, CSS, and JavaScript
+# 🎮 TicTacKaro — Tic Tac Toe Game
 
-Tic Tac Toe, also known as Noughts and Crosses, is a classic two-player game that's both fun and challenging. In this tutorial, we will walk you through the process of creating a Tic Tac Toe game using HTML, CSS, and JavaScript.
+An open source sleek, browser-based Tic Tac Toe game built with HTML, CSS, and JavaScript. Play against a friend or challenge the CPU in this responsive, interactive experience.
 
-<img width="1394" alt="Screenshot 2023-08-04 at 1 59 38 PM" src="https://github.com/developerrahulofficial/Tic-Tac-Toe-Game/assets/83329806/b59500a0-e261-4dc3-963a-f8881612bfce">
+🌐 Live Demo: [tictackaro.vercel.app](https://tictackaro.vercel.app)
 
+---
 
-### Step 1: Setting Up the HTML Structure
+## ✨ Features
 
-Let's start by setting up the basic structure of our game using HTML:
+- 🧑‍🤝‍🧑 Two Game Modes: Player vs Player and Player vs CPU
+- 🧠 Basic AI logic for CPU opponent
+- 📊 Score tracking for X, O, and ties
+- 🖼️ Modal-based result display
+- 🔁 Restart and quit options
+- 📱 Responsive design for desktop and mobile
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Meta tags and stylesheets -->
-    <!-- Link to external fonts and stylesheets -->
-    <title>Tic Tac Toe</title>
-</head>
-<body>
-    <!-- Your game elements will go here -->
-</body>
-</html>
-```
+---
 
-### Step 2: Styling the Game with CSS
+## 📦 Tech Stack
 
-Now let's style the game elements using the provided CSS:
+| Technology | Purpose              |
+|------------|----------------------|
+| HTML       | Structure            |
+| CSS        | Styling and layout   |
+| JavaScript | Game logic & events  |
 
-```css
-/* Your provided CSS styles */
-```
+---
 
-### Step 3: Adding JavaScript Logic
+## 🚀 Getting Started
 
-Next, we'll add the JavaScript code to make our game interactive. Below is the code you provided, along with some additional comments to explain each part:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Unknownzop/tictackaro.git
+   ```
+2. Open `index.html` in your browser.
+3. Choose your game mode and start playing!
 
-```javascript
-// Constants for player marks and winning combinations
-const X_CLASS = 'x';
-const O_CLASS = 'o';
-const WINNING_COMBINATIONS = [
-    [0, 1, 2],
-    [3, 4, 5],
-    // ... (other combinations)
-];
+---
 
-// Initialize game variables
-let currentPlayerMark = O_CLASS;
-let isVsPlayer = false;
-let oTurn = false;
+## 🖼️ Screenshot
 
-let xWin = 0;
-let oWin = 0;
-let tie = 0;
+![Game Screenshot](https://github.com/developerrahulofficial/Tic-Tac-Toe-Game/assets/83329806/b59500a0-e261-4dc3-963a-f8881612bfce)
 
-let winningArray;
-let currentClass;
+---
 
-// ... (Other constants and variables)
+## 🛠️ How It Works
 
-// Function to handle game mode selection
-function setGameModeHandler() {
-    // Handle game mode selection here
-}
+The game uses DOM manipulation and event listeners to track player moves, check for wins or draws, and update the UI accordingly. Here's a quick breakdown:
 
-// ... (Other functions)
+- **Game Board**: 3×3 grid of clickable cells
+- **Turn Logic**: Alternates between X and O
+- **Win Detection**: Checks predefined winning combinations
+- **Draw Detection**: Checks if all cells are filled without a winner
+- **Modal Display**: Shows result and options to restart or quit
 
-// Event listeners for game mode buttons
-vsCpuBtn.addEventListener('click', setGameModeHandler);
-vsPlayerBtn.addEventListener('click', setGameModeHandler);
-```
+---
 
-### Step 4: Handling User Interaction
+## 📜 License
 
-In this step, we'll implement the logic to handle user interaction and gameplay. This includes functions for playing against the CPU and against another player.
-
-```javascript
-// Function to handle player's turn
-function playHandler(event) {
-    // Handle player's turn and gameplay logic here
-}
-
-// Function to check for a win
-function checkWin(currentClass) {
-    // Check if there is a win based on the current class
-    // Return true if there's a win, false otherwise
-}
-
-// Function to check for a draw
-function isDraw() {
-    // Check if the game is a draw
-    // Return true if it's a draw, false otherwise
-}
-
-// ... (Other functions)
-
-// Event listener for player's moves
-cells.forEach(cell => {
-    cell.addEventListener('click', playHandler, { once: true });
-});
-
-// ... (Other event listeners and function calls)
-```
-
-### Step 5: Displaying Game Results
-
-Finally, we'll implement the logic to display game results and handle restarts.
-
-```javascript
-// Function to handle end of the game
-function endGame(draw) {
-    // Handle displaying game result and options here
-}
-
-// Function to handle restarting the game
-function setNextRound() {
-    // Handle restarting the game here
-}
-
-// ... (Other functions)
-
-// Event listeners for modal buttons
-nextRoundBtn.addEventListener('click', setNextRound);
-quitBtn.addEventListener('click', () => {
-    location.reload();
-});
-```
-
-### Conclusion
-
-Congratulations! You've successfully created a Tic Tac Toe game using HTML, CSS, and JavaScript. This game demonstrates the core concepts of web development, including user interaction, event handling, and dynamic content updates.
-
-Feel free to expand on this project by adding features like keeping track of game rounds, improving the user interface, or implementing more advanced AI for the CPU opponent. Happy coding!
+This project is open-source under the [MIT License](https://choosealicense.com/licenses/mit/).
